@@ -1,0 +1,253 @@
+$color-primario: #c1121f;
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+
+@keyframes mover{
+  0%{ translate: 0 0;}
+  50%{ translate: 0 10px;}
+  100%{ translate: 0 0px;}
+
+}
+
+
+
+header {
+  background-color: $color-primario;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  box-shadow: 0 3px 8px
+}
+header h1 {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.eslogan{
+    margin-bottom: 10px;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #2b2b2b;
+  transition: 0.3s ease;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  background-color: #ffd60a;
+  padding: 15px 0;
+  box-shadow: 0 3px 9px;
+  border-radius: 0 0 8px 8px;
+}
+
+.a-lista:hover {
+  color: $color-primario;
+}
+
+main {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff5b0;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px 
+}
+
+body{
+  background-color: #f8f9fa;
+  color: #2b2b2b;
+  font-family: "Nunito", sans-serif;
+  line-height: 1.6;
+}
+
+
+#titulo-principal {
+  font-size: 48px;
+  color: #ffd60a;
+  font-weight: 700;
+  text-decoration: underline;
+}
+body h1 {
+    font-size: 30px;
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;
+    text-shadow: 1px 1px 6px rgb(69, 69, 69);
+}
+h2 {
+  font-style: italic;
+  color: #9c0f1a;
+}
+
+
+.imagen-de-logo {
+  width: 160px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  transition: background-color 1.5s ease, transform 1.5s ease;
+  margin-bottom: 10px;
+}
+.imagen-de-logo:hover{
+  background-color: #a72a2a;
+  transform: scale(1.05);
+  
+}
+
+.imagen-pagina-principal {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+footer {
+  background-color: $color-primario;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.banner-ofertas {
+  text-align: center;
+  background-color: #f1d901;
+  color: #3b2f2f;
+  padding: 30px 15px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.grid-ofertas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.oferta-card {
+  background-color: #fff8dc;
+  border: 2px solid #f1d901;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.oferta-card:hover {
+  transform: scale(1.05);
+}
+
+.oferta-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.precio-anterior {
+  text-decoration: line-through;
+  color: #a0a0a0;
+}
+
+.precio-oferta {
+  color: $color-primario;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.intro-productos {
+  text-align: center;
+  background-color: #f1d901;
+  color: #3b2f2f;
+  padding: 30px 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.categoria {
+  margin: 40px 20px;
+}
+
+.categoria h3 {
+  color: #3b2f2f;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+@media (min-width: 1200px) {
+  .grid-productos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.producto-card {
+  background-color: #fff8dc;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 0px 10px 0px #c0c0c0;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 6px 6px  rgb(203, 203, 142);
+  transition: 0.2s;
+}
+
+.producto-card img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.producto-card h4 {
+  color: #3b2f2f;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.producto-card p {
+  font-weight: bold;
+  color: $color-primario;
+}
+
+
+.link-footer{
+  color: rgb(255, 151, 151);
+}
+
+.link-footer:hover{
+  color: rgb(255, 115, 115);
+}
